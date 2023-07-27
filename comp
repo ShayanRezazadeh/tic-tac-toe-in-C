@@ -1,0 +1,10 @@
+echo -e "\033[33mCompiling program"
+echo
+gcc ttt.c -o ttt
+if [ $? -eq 0 ]
+then
+	echo -e "\033[32mProgram successfuly compiled"
+else
+	echo
+	echo -e "\033[31mFailed to compile program"
+fi
